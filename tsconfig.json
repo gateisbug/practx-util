@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    /* Build Option */
+    "baseUrl": "./",
+    "target": "ES2015",
+    "lib": ["ES2020", "dom"],
+    "module": "ESNext",
+    "skipLibCheck": false,
+    "rootDir": "./src",
+    "allowJs": true,
+    "useDefineForClassFields": true,
+    //    "typeRoots": ["src/types"],
+
+    /* Bundler mode */
+    "moduleResolution": "node",
+    "isolatedModules": false,
+//    "noEmit": true,
+    "jsx": "react",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "sourceMap": false,
+    "inlineSources": false,
+    "types": ["node"],
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "paths": {
+      "@src/*": ["src/*"]
+    }
+  },
+
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules", "dist", ".yarn"
+  ]
+}
