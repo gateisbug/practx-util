@@ -37,6 +37,7 @@ export default {
       babelHelpers: 'bundled',
       exclude: ['.yarn/**', 'dist'],
       presets: [
+        '@babel/preset-typescript',
         '@babel/preset-env',
         '@babel/preset-react'
       ],

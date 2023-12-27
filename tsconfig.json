@@ -22,7 +22,7 @@
     "declarationDir": "./dist/types",
     "sourceMap": false,
     "inlineSources": false,
-    "types": ["node"],
+    "types": ["node", "jest"],
 
     /* Linting */
     "strict": true,
@@ -37,6 +37,10 @@
 
   "include": ["src/**/*"],
   "exclude": [
-    "node_modules", "dist", ".yarn"
+    "node_modules",
+    "dist",
+    ".yarn",
+    "**/*.test.*",
+    "**/*.spec.*"
   ]
 }
